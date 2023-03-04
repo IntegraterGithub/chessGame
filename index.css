@@ -1,0 +1,73 @@
+ 
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+#game {
+    width:100%; 
+    height:100%;
+    display:grid;
+}
+
+
+.ranks {
+    position:absolute;
+    text-align:center;
+    
+}
+
+ 
+#files p {
+    color:black;
+  float:left;  
+  width:12.5%;
+  text-align:center;
+  margin-top:0%;
+}
+#board {
+    justify-self:center;
+    align-self:center;
+    height:500px;
+    width: 500px;
+}
+.row {
+    height: 12.5%;
+    width: 100%;
+}
+.square {
+    float:left;
+    height: 100%; 
+    width: 12.5%;
+    background-color: #eeeed2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .square .piece {
+height: 75px;
+} */
+.even .square:nth-child(even) {
+background-color: #769656;
+}
+.odd .square:nth-child(odd){
+    background-color: #769656;
+}
+
+.activeSquare  {
+    background-color: #f7f76a; 
+}
+.green.activeSquare {
+    background-color: #bacb2e !important;
+}
+.possibleMoves {
+    height: 35%;
+    width: 35%;
+    border-radius: 50%;
+    background-color:#d6d6bd;
+    opacity: 1;
+}
+.possibleMoves.green {
+    opacity: 0.3;
+}

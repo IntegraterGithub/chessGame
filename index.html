@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chess Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" href="./assets/Queen_White.png" />
+  </head>
+
+  <body>
+    <div id="game">
+      <h1 style="text-align: center;">Chess Game</h1>
+
+      <div id="board">
+        <div class="row even" id="row-8">
+          <p class="ranks">8</p>
+
+          <div class="square" id="8-a">
+            <img src="./assets/Rook_Black.png" class="piece rook black" />
+          </div>
+          <div class="square" id="8-b">
+            <img src="./assets/Knight_Black.png" class="piece knight black" />
+          </div>
+          <div class="square" id="8-c">
+            <img src="./assets/Bishop_Black.png" class="piece bishop black" />
+          </div>
+          <div class="square" id="8-d">
+            <img src="./assets/Queen_Black.png" class="piece queen black" />
+          </div>
+          <div class="square" id="8-e">
+            <img src="./assets/King_Black.png" class="piece king black" />
+          </div>
+          <div class="square" id="8-f">
+            <img src="./assets/Bishop_Black.png" class="piece bishop black" />
+          </div>
+          <div class="square" id="8-g">
+            <img src="./assets/Knight_Black.png" class="piece knight black" />
+          </div>
+          <div class="square" id="8-h">
+            <img src="./assets/Rook_Black.png" class="piece rook black" />
+          </div>
+        </div>
+        <div class="row odd" id="row-7">
+          <p class="ranks">7</p>
+          <div class="square" id="7-a">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-b">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-c">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-d">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-e">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-f">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-g">
+            <img src="./assets/Pawn_Black.png" class="piece pawn black" />
+          </div>
+          <div class="square" id="7-h">
+            <img src="./assets/Pawn_Black.png" class="piece pawn" />
+          </div>
+        </div>
+        <div class="row even" id="row-6">
+          <p class="ranks">6</p>
+          <div class="square" id="6-a"></div>
+          <div class="square" id="6-b"></div>
+          <div class="square" id="6-c"></div>
+          <div class="square" id="6-d"></div>
+          <div class="square" id="6-e"></div>
+          <div class="square" id="6-f"></div>
+          <div class="square" id="6-g"></div>
+          <div class="square" id="6-h"></div>
+        </div>
+        <div class="row odd" id="row-5">
+          <p class="ranks">5</p>
+          <div class="square" id="5-a"></div>
+          <div class="square" id="5-b"></div>
+          <div class="square" id="5-c"></div>
+          <div class="square" id="5-d"></div>
+          <div class="square" id="5-e"></div>
+          <div class="square" id="5-f"></div>
+          <div class="square" id="5-g"></div>
+          <div class="square" id="5-h"></div>
+        </div>
+        <div class="row even" id="row-4">
+          <p class="ranks">4</p>
+          <div class="square" id="4-a"></div>
+          <div class="square" id="4-b"></div>
+          <div class="square" id="4-c"></div>
+          <div class="square" id="4-d"></div>
+          <div class="square" id="4-e"></div>
+          <div class="square" id="4-f"></div>
+          <div class="square" id="4-g"></div>
+          <div class="square" id="4-h"></div>
+        </div>
+        <div class="row odd" id="row-3">
+          <p class="ranks">3</p>
+          <div class="square" id="3-a"></div>
+          <div class="square" id="3-b"></div>
+          <div class="square" id="3-c"></div>
+          <div class="square" id="3-d"></div>
+          <div class="square" id="3-e"></div>
+          <div class="square" id="3-f"></div>
+          <div class="square" id="3-g"></div>
+          <div class="square" id="3-h"></div>
+        </div>
+        <div class="row even" id="row-2">
+          <p class="ranks">2</p>
+          <div class="square" id="2-a">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-b">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-c">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-d">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-e">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-f">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-g">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+          <div class="square" id="2-h">
+            <img src="./assets/Pawn_White.png" class="piece" />
+          </div>
+        </div>
+        <div class="row odd" id="row-1">
+          <p class="ranks">1</p>
+          <div class="square" id="1-a">
+            <img src="./assets/Rook_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-b">
+            <img src="./assets/Knight_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-c">
+            <img src="./assets/Bishop_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-d">
+            <img src="./assets/Queen_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-e">
+            <img src="./assets/King_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-f">
+            <img src="./assets/Bishop_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-g">
+            <img src="./assets/Knight_White.png" class="piece" />
+          </div>
+          <div class="square" id="1-h">
+            <img src="./assets/Rook_White.png" class="piece" />
+          </div>
+        </div>
+        <div id="files">
+          <p>a</p>
+          <p>b</p>
+          <p>c</p>
+          <p>d</p>
+          <p>e</p>
+          <p>f</p>
+          <p>g</p>
+          <p>h</p>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="./Scripts/Piece.js"></script>
+    <script type="text/javascript" src="./Scripts/Pieces/Rook.js"></script>  
+    <script type="text/javascript" src="./Scripts/Board.js"></script>
+    <script type="text/javascript" src="./Scripts/Game.js"></script>
+  </body>
+</html>
